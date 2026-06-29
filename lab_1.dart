@@ -1,9 +1,7 @@
 void main() {
-  
-  
   List<String> sub = ['Data Structure' , 'Operation System' , 'Java' ] ;
   print(sub.length) ;
-  print('${sub[0]}\n${sub.last}');
+  print('first sub : ${sub[0]}\nlast sub : ${sub.last}');
   sub.add('PE');
   print(sub);
   var studentScores = {
@@ -16,5 +14,10 @@ void main() {
     if (i.key.contains('a')) {
       print('${i.key} : ${i.value}');
     } 
+  }
+  for (var i in studentScores.entries) {
+    if (i.value >= 50) {
+      print('${i.key} : ${i.value}');
+    }
   }
 }
